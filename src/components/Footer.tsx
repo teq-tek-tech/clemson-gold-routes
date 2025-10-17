@@ -1,15 +1,14 @@
 import { Linkedin, Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
-
 export const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <footer className="bg-secondary text-primary-foreground pt-16 pb-8">
+  return <footer className="bg-secondary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -26,28 +25,13 @@ export const Footer = () => {
               Delivering trust and moving the world through reliable global logistics solutions.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-smooth"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-smooth">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-smooth"
-              >
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-smooth">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-smooth"
-              >
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-smooth">
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
@@ -58,34 +42,22 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-primary">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-primary-foreground/70 hover:text-primary transition-smooth"
-                >
+                <button onClick={() => scrollToSection("home")} className="text-primary-foreground/70 hover:text-primary transition-smooth">
                   Home
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-primary-foreground/70 hover:text-primary transition-smooth"
-                >
+                <button onClick={() => scrollToSection("about")} className="text-primary-foreground/70 hover:text-primary transition-smooth">
                   About Us
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-primary-foreground/70 hover:text-primary transition-smooth"
-                >
+                <button onClick={() => scrollToSection("services")} className="text-primary-foreground/70 hover:text-primary transition-smooth">
                   Services
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="text-primary-foreground/70 hover:text-primary transition-smooth"
-                >
+                <button onClick={() => scrollToSection("contact")} className="text-primary-foreground/70 hover:text-primary transition-smooth">
                   Contact
                 </button>
               </li>
@@ -114,21 +86,13 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <a
-                  href="mailto:info@clemsonlogistics.com"
-                  className="text-primary-foreground/70 hover:text-primary transition-smooth"
-                >
+                <a href="mailto:info@clemsonlogistics.com" className="text-primary-foreground/70 hover:text-primary transition-smooth">
                   info@clemsonlogistics.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <a
-                  href="tel:+23278593836"
-                  className="text-primary-foreground/70 hover:text-primary transition-smooth"
-                >
-                  +232 7859 3836
-                </a>
+                <a href="tel:+23278593836" className="text-primary-foreground/70 hover:text-primary transition-smooth">+15712150688</a>
               </li>
             </ul>
           </div>
@@ -141,6 +105,5 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };

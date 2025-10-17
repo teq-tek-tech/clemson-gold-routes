@@ -4,16 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "sonner";
-
 export const Contact = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     toast.success("Message sent! We'll get back to you soon.");
     (e.target as HTMLFormElement).reset();
   };
-
-  return (
-    <section id="contact" className="py-20 bg-background">
+  return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
@@ -52,10 +49,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2 text-foreground">Email</h3>
-                  <a
-                    href="mailto:info@clemsonlogistics.com"
-                    className="text-primary hover:text-primary-dark transition-smooth"
-                  >
+                  <a href="mailto:info@clemsonlogistics.com" className="text-primary hover:text-primary-dark transition-smooth">
                     info@clemsonlogistics.com
                   </a>
                 </div>
@@ -69,12 +63,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2 text-foreground">Phone</h3>
-                  <a
-                    href="tel:+23278593836"
-                    className="text-primary hover:text-primary-dark transition-smooth"
-                  >
-                    +232 7859 3836
-                  </a>
+                  <a href="tel:+23278593836" className="text-primary hover:text-primary-dark transition-smooth">+15712150688</a>
                 </div>
               </CardContent>
             </Card>
@@ -89,55 +78,28 @@ export const Contact = () => {
                     <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
                       Full Name
                     </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      placeholder="John Doe"
-                      className="w-full"
-                    />
+                    <Input id="name" name="name" type="text" required placeholder="John Doe" className="w-full" />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
                       Email Address
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      placeholder="john@example.com"
-                      className="w-full"
-                    />
+                    <Input id="email" name="email" type="email" required placeholder="john@example.com" className="w-full" />
                   </div>
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground">
                       Phone Number
                     </label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="+1 (555) 123-4567"
-                      className="w-full"
-                    />
+                    <Input id="phone" name="phone" type="tel" placeholder="+1 (555) 123-4567" className="w-full" />
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
                       Message
                     </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      placeholder="Tell us about your logistics needs..."
-                      rows={4}
-                      className="w-full"
-                    />
+                    <Textarea id="message" name="message" required placeholder="Tell us about your logistics needs..." rows={4} className="w-full" />
                   </div>
 
                   <Button type="submit" variant="hero" size="lg" className="w-full">
@@ -149,6 +111,5 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
