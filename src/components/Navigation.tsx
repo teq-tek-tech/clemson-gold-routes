@@ -35,7 +35,7 @@ export const Navigation = () => {
           <div className="flex items-center space-x-3">
             <img src={clemsonLogo} alt="Clemson Logistics Logo" className="h-12 w-auto" />
             <span className="text-xl font-bold text-primary-foreground">
-              THE <span className="text-primary">CLEMSON</span>
+              THE CLEMSON <span className="text-primary">LOGISTICS</span>
             </span>
           </div>
 
