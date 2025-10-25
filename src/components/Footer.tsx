@@ -1,4 +1,6 @@
 import { Linkedin, Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import clemsonLogo from "@/assets/clemson-logo.png";
+
 export const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -13,12 +15,10 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">C</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img src={clemsonLogo} alt="Clemson Logistics Logo" className="h-12 w-auto" />
               <span className="text-lg font-bold">
-                CLEMSON <span className="text-primary">LOGISTICS</span>
+                <span className="text-primary">LOGISTICS</span>
               </span>
             </div>
             <p className="text-primary-foreground/70 mb-4">

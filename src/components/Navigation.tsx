@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import clemsonLogo from "@/assets/clemson-logo.png";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,12 +32,10 @@ export const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">C</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img src={clemsonLogo} alt="Clemson Logistics Logo" className="h-12 w-auto" />
             <span className="text-xl font-bold text-primary-foreground">
-              CLEMSON <span className="text-primary">LOGISTICS</span>
+              <span className="text-primary">LOGISTICS</span>
             </span>
           </div>
 
