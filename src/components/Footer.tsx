@@ -17,8 +17,8 @@ export const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img src={clemsonLogo} alt="Clemson Logistics Logo" className="h-12 w-auto" />
-              <span className="text-lg font-bold">
-                <span className="text-primary">LOGISTICS</span>
+              <span className="text-lg font-bold text-primary-foreground">
+                THE <span className="text-primary">CLEMSON</span>
               </span>
             </div>
             <p className="text-primary-foreground/70 mb-4">
