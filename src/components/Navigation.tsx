@@ -32,12 +32,15 @@ export const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <button 
+            onClick={() => scrollToSection("home")}
+            className="flex items-center space-x-3 hover:opacity-80 transition-smooth"
+          >
             <img src={clemsonLogo} alt="Clemson Logistics Logo" className="h-12 w-auto" />
             <span className="text-xl font-bold text-primary-foreground">
               THE CLEMSON <span className="text-primary">LOGISTICS</span>
             </span>
-          </div>
+          </button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">

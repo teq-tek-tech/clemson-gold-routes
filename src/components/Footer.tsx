@@ -15,12 +15,15 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
+            <button 
+              onClick={() => scrollToSection("home")}
+              className="flex items-center space-x-3 mb-4 hover:opacity-80 transition-smooth"
+            >
               <img src={clemsonLogo} alt="Clemson Logistics Logo" className="h-12 w-auto" />
               <span className="text-lg font-bold text-primary-foreground">
                 THE CLEMSON <span className="text-primary">LOGISTICS</span>
               </span>
-            </div>
+            </button>
             <p className="text-primary-foreground/70 mb-4">
               Delivering trust and moving the world through reliable global logistics solutions.
             </p>
