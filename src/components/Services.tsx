@@ -1,5 +1,5 @@
 import servicesImage from "@/assets/services-port.jpg";
-import { Plane, Warehouse, FileCheck, Network, PackageCheck } from "lucide-react";
+import { Plane, Warehouse, FileCheck, Network, PackageCheck, ShoppingCart, BarChart3, Snowflake, ShoppingBag } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -27,6 +27,26 @@ const services = [
     icon: PackageCheck,
     title: "Last-Mile Delivery",
     description: "Fast, accurate deliveries from our hubs to your customer's door.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Procurement Services",
+    description: "Strategic sourcing and vendor management to optimize your supply costs.",
+  },
+  {
+    icon: BarChart3,
+    title: "Inventory Management",
+    description: "Real-time tracking and optimization of stock levels across multiple locations.",
+  },
+  {
+    icon: Snowflake,
+    title: "Cold Chain Logistics",
+    description: "Temperature-controlled transport for pharmaceuticals, food, and sensitive goods.",
+  },
+  {
+    icon: ShoppingBag,
+    title: "E-commerce Fulfillment",
+    description: "Seamless order processing, picking, packing, and shipping for online retailers.",
   },
 ];
 
